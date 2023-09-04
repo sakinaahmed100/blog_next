@@ -12,6 +12,7 @@ export default function Home() {
   const {  all_blogs,write_blogs} =state
   const [user, loading, error] = useAuthState(auth);
   console.log(user,loading ,error)
+  console.log( state.displayArray,state.toDisplayBlog);
   return (
 
     <div className={`${styles.container} flex_center_col`}>

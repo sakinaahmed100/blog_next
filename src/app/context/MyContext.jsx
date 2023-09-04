@@ -90,6 +90,9 @@ const MyContextProvider = ({ children }) => {
         // User is signed in
       } else {
         dispatch({type:"TOGGLE_SIGNUP_BTN"})
+        if(location.pathname === "/profile"){
+router.push("/")
+        }
         fetchBlogData()
 
       }
@@ -213,6 +216,8 @@ const MyContextProvider = ({ children }) => {
         };
 console.log(newBlog,newBlog.date);
         writeBlogDataToDatabase(newBlog).then(()=>{
+          dispatch({type:"EMPTY_ARRAY"})
+          console.log("hi")
           fetchBlogData()
 
         });

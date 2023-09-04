@@ -56,6 +56,7 @@ export default function MyReducer(state, action) {
 
         case "FETCH_BLOG_DATA": {
             console.log(action.payload);
+            state.toDisplayBlog={}
 
             return {
                 ...state,
@@ -64,7 +65,16 @@ export default function MyReducer(state, action) {
             };
         }
 
+case "EMPTY_ARRAY":{
+    console.log("hittttt");
+    return{
+        ...state,
+       displayArray:[],
+       dataArray:[],
+       toDisplayBlog:{},
 
+    }
+}
         case "DISPLAY_DATA": {
             const key = action.payload
             const data = state.toDisplayBlog
@@ -86,8 +96,8 @@ export default function MyReducer(state, action) {
             } else {
                 console.log("Key not found.");
             }
-
-
+console.log(state.displayArray)
+console.log(state.dataArray)
             return {
                 ...state,
                 displayArray: state.dataArray
