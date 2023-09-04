@@ -73,11 +73,6 @@ const MyContextProvider = ({ children }) => {
       return [];
     }
   };
-  
-  
-  // useEffect(() => {
-  //   console.log("Updated toDisplayBlog:", state.toDisplayBlog);
-  // }, [state.toDisplayBlog]);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -109,9 +104,7 @@ const MyContextProvider = ({ children }) => {
     let { name, value } = e.target
     if(state.signin){
       dispatch({ type: "GET_VALUE", payload: { name, value } })
-
     }
-
   }
 
   const getValueSignIn = (e) => {

@@ -43,7 +43,7 @@
 .password_label {
     font-size: .8rem;
     align-items: flex-start;
-
+margin-bottom: .2rem;
 }
 
 
@@ -54,9 +54,16 @@
     color: #926eb6;
     height: 5vh;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #926eb6;
+    border-radius: .5rem;
+    padding-left: .2rem;
 }
-
+.full_name_input:focus,
+.phone_input:focus,
+.email_input:focus,
+.password_input:focus {
+ outline:2px solid rgba(0, 47, 255, 0.849);
+}
 .buttons {
     margin: 2vh 0vw;
 }
@@ -117,7 +124,7 @@
 
 @media(max-width:450px) {
     .signupDiv {
-        padding: 5vh 15vw;
+        padding: 5vh 10vw;
 
     }
 

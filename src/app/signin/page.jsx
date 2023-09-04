@@ -8,22 +8,10 @@ import { useRouter } from 'next/navigation'
 export default function SignIn() {
   const {getValueSignIn,SignIn}= UseMyContext();
   const router = useRouter()
-
-  // const SignInRoute=async()=>{
-  
-  //   try {
-  //     // await AuthComponent();
-  //     router.push('/');
-  //   } catch (error) {
-  //     console.error(error);
-  //     // Handle the error appropriately
-  //   }
-   
-  // }
     return (
         <>
 <div className={`${styles.container} flex_center_col`}>
-        <div className={`${styles.pageHeading}`}>
+        <div className={`${styles.pageHeading} flex_center_col`}>
           Lively Voices
         </div>
         <div className={`${styles.signupDiv} flex_around`}>
@@ -43,8 +31,8 @@ export default function SignIn() {
           </div>
 
           <div className={`${styles.buttons} flex_center_col`}>
-          <button onClick={SignIn} >Sign In</button>
-
+          <button className={`${styles.signUpBtn}`} onClick={SignIn} >Sign In</button>
+         
             <p>Don't have an account? <Link href="signup"> Sign Up</Link></p>
 
 

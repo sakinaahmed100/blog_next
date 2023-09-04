@@ -3,7 +3,6 @@
 gap: 1rem;
 padding: 5vh 10vw;
 background-color: hsla(0, 0%, 100%, 0.829);
-/* background-color: hsla(270, 33%, 57%, 0.856); */
 border-radius: 2rem;
 box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.801);
 margin: 5vh 0;
@@ -52,4 +51,21 @@ border: 1px solid #926eb6;
 .word_count{
     color: #926eb6;
     padding-right: 1rem;
+}
+@media(max-width:500px){
+    .blogInputDiv{
+        width: 80%;
+    }
+    .blogInput{
+        width: 60vw;
+    }
+}
+
+@media(max-width:330px){
+    .blogInputDiv{
+        width: 90%;
+    }
+    .blogInput{
+        width: 80vw;
+    }
 }

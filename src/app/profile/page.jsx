@@ -16,17 +16,17 @@ export default function WriteBlogs() {
                     <form action="">
                         <div className={`${styles.form} flex_center_col`}>
 
-                            <div>
+                            <div className={`${styles.inputDiv} flex_center_col`}>
                             <label htmlFor="">Name:</label>
                             <input value={profileInfo.full_name} type="text" />
                             </div>
-                            <div>
 
+                            <div className={`${styles.inputDiv} flex_center_col`}>
                             <label htmlFor="">Phone:</label>
                             <input value={profileInfo.phone} type="text" />
                             </div>
-                            <div>
 
+                            <div className={`${styles.inputDiv} flex_center_col`}>
                             <label  aria-readonly  htmlFor="">Email:</label>
                             <input className={styles.disable} value={profileInfo.email}  type="text" />
                             </div>

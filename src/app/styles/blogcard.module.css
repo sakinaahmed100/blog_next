@@ -2,7 +2,6 @@
     border: 1px solid #926eb6;
     padding: 2vh 3vw;
     border-radius: 1rem;
-    width: 60vw;
     background-color: hsla(0, 0%, 100%, 0.829);
     box-shadow: inset 2px 2px 8px 1px black;
 }
@@ -34,4 +33,18 @@ color: #6FA7D9;
     word-spacing: .25rem;
     font-weight: 500;
     color: #1a2030;
+}
+
+@media(max-width:600px){
+    .blogDiv{
+        width: 70vw;
+    }
+
+}
+
+@media(max-width:350px){
+    .blogDiv{
+        width: 85vw;
+    }
+
 }
