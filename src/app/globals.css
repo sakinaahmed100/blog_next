@@ -1,0 +1,41 @@
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  --s: 120px; /* control the size*/
+  
+  --_g: radial-gradient(#0000 70%,#1a2030 71%);
+  background:
+    var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2),
+    conic-gradient(#B8A7C9  25%,#D7C9A7 0 50%, #6FA7D9 0 75%, #F7F4E9 0);
+  background-size: var(--s) var(--s); 
+}
+
+.flex_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.flex_center_col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex_around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+/* 
+Soft Blue: #6FA7D9
+Pale Gray: #E5E5E5
+Sage Green: #A7C9A7
+Warm Ivory: #F7F4E9
+Subtle Beige: #D7C9A7
+Muted Lavender: #B8A7C9 */

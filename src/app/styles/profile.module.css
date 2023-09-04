@@ -1,0 +1,49 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.profile{
+    background-color: white;
+    box-shadow: inset 2px 2px 8px 1px black;
+border: 4px double #926eb6;
+    padding: 5vh 5vw;
+border-radius: 2rem;
+}
+.form{
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 4vh 0;
+}
+
+.form div input{
+    border: none;
+    border-bottom: 1px solid #B8A7C9;
+    padding-left: 2vw;
+    color: #926eb6;
+    width: 20vw;
+}
+
+.form div input:focus{
+    outline: none;
+}
+
+.btnDiv{
+    gap: 1rem;
+
+}
+.logOut{
+    background-color: #926eb6;
+    border: none;
+    color: white;
+    padding: 1vh 2vw;
+    border-radius: .5rem;
+    /* box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.575); */
+    cursor: pointer;
+
+}
+.logOut:hover{
+    background-color: #355775;
+    transform: scale(1.01);
+
+}

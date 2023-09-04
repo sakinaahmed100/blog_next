@@ -1,0 +1,148 @@
+.container {
+    padding: 8vh 30vw;
+
+}
+
+.pageHeading {
+    color: #926eb6;
+    font-size: 2.5rem;
+    background-color: white;
+    width: 100vw;
+    padding: 2vh 0;
+    box-shadow: inset 4px 0px 15px 8px rgba(72, 54, 90, 0.205);
+
+}
+
+.signupDiv {
+    padding: 2vh 6vw;
+    border-radius: 2rem;
+    border: 3px double rgb(146, 110, 182);
+    height: 70vh;
+    background-color: #f7f7f7ec;
+    box-shadow: inset 4px 4px 15px 15px rgb(72, 54, 90, .1);
+    margin-top: 2vh;
+
+}
+
+.signupHeading {
+    color: #355775;
+    font-size: 1.5rem;
+    padding: 2vh 0vw;
+    font-weight: 600;
+
+}
+
+.form {
+    gap: 1.2rem;
+
+}
+
+.full_name_label,
+.phone_label,
+.email_label,
+.password_label {
+    font-size: .8rem;
+    align-items: flex-start;
+
+}
+
+
+.full_name_input,
+.phone_input,
+.email_input,
+.password_input {
+    color: #926eb6;
+    height: 5vh;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.buttons {
+    margin: 2vh 0vw;
+}
+
+.signUpBtn {
+    border: none;
+    color: white;
+    background-color: #926eb6;
+    padding: .5rem;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+
+
+@media(max-width:950px) {
+    .signupDiv {
+        padding: 5vh 8vw;
+    }
+
+    .form {
+        margin-top: 5vh;
+    }
+
+    .full_name_input,
+    .phone_input,
+    .email_input,
+    .password_input {
+        width: 25vw;
+    }
+    
+}
+
+@media(max-width:850px) {
+    .signupDiv {
+        padding: 5vh 10vw;
+    }
+
+    .full_name_input,
+    .phone_input,
+    .email_input,
+    .password_input {
+        width: 30vw;
+    }
+
+   
+
+    
+}
+
+@media(max-width:650px) {
+
+    .signupDiv {
+        padding: 5vh 14vw;
+    }
+    
+}
+
+@media(max-width:450px) {
+    .signupDiv {
+        padding: 5vh 15vw;
+
+    }
+
+    .full_name_input,
+    .phone_input,
+    .email_input,
+    .password_input {
+        width: 60vw;
+    }
+
+}
+
+@media(max-width:330px) {
+    .pageHeading {
+        font-size: 1.5rem;
+    }
+    .full_name_input,
+    .phone_input,
+    .email_input,
+    .password_input {
+        width: 70vw;
+    }
+    .form {
+        gap: 1rem;
+        margin-top: 0;
+    
+    }
+}

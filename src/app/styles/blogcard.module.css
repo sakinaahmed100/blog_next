@@ -1,0 +1,37 @@
+.blogDiv{
+    border: 1px solid #926eb6;
+    padding: 2vh 3vw;
+    border-radius: 1rem;
+    width: 60vw;
+    background-color: hsla(0, 0%, 100%, 0.829);
+    box-shadow: inset 2px 2px 8px 1px black;
+}
+.userDetails{
+    width: 20vw;
+    gap: 1rem;
+justify-content: flex-start;
+margin-bottom: 1rem;
+}
+.userImage{
+    border-radius: 50%;
+}
+
+.userName{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.date,.time{
+    font-size: .7rem;
+
+}
+.time{
+color: #6FA7D9;
+}
+.blogText{
+    margin-bottom: 1rem;
+    line-height: 1.3rem;
+    word-spacing: .25rem;
+    font-weight: 500;
+    color: #1a2030;
+}

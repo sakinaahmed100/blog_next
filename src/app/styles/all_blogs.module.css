@@ -1,0 +1,17 @@
+.blogContainer{
+    margin: 5vh 12vw;
+    gap: 2rem;
+    
+}
+
+.heading{
+    background-color: white;
+    width: 100vw;
+    padding: 1rem;
+    margin-bottom: 1rem ;
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.801);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #6fa8d9c7;
+
+}

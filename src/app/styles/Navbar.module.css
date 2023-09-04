@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #B8A7C9;
+    padding: 4vh 8vw;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    width: 100vw;
+
+}
+.headigDiv{
+    color: white;
+    font-size: 1.5rem;
+}
+.btnDiv{
+    gap: .1rem;
+}
+
+.logOut{
+    /* background-color: #6FA7D9; */
+    border: none;
+    color: white;
+    padding: 1vh 1vw;
+    /* border-radius: .5rem; */
+    /* box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.575); */
+    cursor: pointer;
+
+}
+.logOut:hover{
+    /* background-color: #355775; */
+    transform: scale(1.01);
+    color:  #355775;
+
+}
