@@ -6,7 +6,7 @@ import Button from "../components/Button"
 export default function WriteBlogs() {
     const { state,Logout, getValue } = UseMyContext();
     const { displayArray, blog } = state
-    console.log(state.snapshot.email);
+    // console.log(state,"hi");
     const profileInfo= state.snapshot
     return (
         <>
@@ -18,17 +18,17 @@ export default function WriteBlogs() {
 
                             <div className={`${styles.inputDiv} flex_center_col`}>
                             <label htmlFor="">Name:</label>
-                            <input value={profileInfo?.full_name} type="text" />
+                            <input placeholder={profileInfo?.full_name} type="text" />
                             </div>
 
                             <div className={`${styles.inputDiv} flex_center_col`}>
                             <label htmlFor="">Phone:</label>
-                            <input value={profileInfo?.phone} type="text" />
+                            <input placeholder={profileInfo?.phone} type="text" />
                             </div>
 
                             <div className={`${styles.inputDiv} flex_center_col`}>
                             <label  aria-readonly  htmlFor="">Email:</label>
-                            <input className={styles.disable} value={profileInfo?.email}  type="text" />
+                            <input className={styles.disable} placeholder={profileInfo?.email}  type="text" />
                             </div>
                         </div>
                     </form>
